@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585094985222.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4029591616",
+    "id" : "6782DC2D",
+    "lastKnownWriteTime" : 1585126467,
+    "last_content_update" : 1585126467833,
+    "path" : "C:/iot/work/RWork/bigdata/car.R",
+    "project_path" : "car.R",
+    "properties" : {
+        "cursorPosition" : "104,67",
+        "scrollLine" : "92",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

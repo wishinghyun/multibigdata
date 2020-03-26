@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584771276722.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "8057555",
+    "id" : "647C636B",
+    "lastKnownWriteTime" : 1584772902,
+    "last_content_update" : 1584772902913,
+    "path" : "C:/iot/work/advanced/filter_exam.R",
+    "project_path" : "filter_exam.R",
+    "properties" : {
+        "cursorPosition" : "20,24",
+        "scrollLine" : "6",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 11,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584686916302.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2419382647",
+    "id" : "DD93328A",
+    "lastKnownWriteTime" : 1584692105,
+    "last_content_update" : 1584692105918,
+    "path" : "C:/iot/work/advanced/randomIfelse.R",
+    "project_path" : "randomIfelse.R",
+    "properties" : {
+        "cursorPosition" : "26,18",
+        "scrollLine" : "22",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

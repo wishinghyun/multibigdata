@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="bigdatashop.product.comment">
+ 	<insert id="insertcomment" parameterType="productcomment">
+ 		insert into pro_comment values(#{prd_no},'Lee',#{pro_comment},sysdate)
+ 	</insert>
+ 	<select id="selectcomment" parameterType="String" resultType="productcomment">
+ 		select * from pro_comment
+ 		where prd_no = #{prd_no}
+ 	</select>
+ 	<select id="commcount" parameterType="productcomment" resultType="productcomment">
+ 		<![CDATA[
+			select *
+			from (select rownum, pro_comment, countnum
+				from comment_result
+				order by to_number(countnum) desc) count
+			where rownum<=10
+		]]>
+ 	</select>
+ 	<select id="wordview" parameterType="productcomment" resultType="productcomment">
+ 		select * from comment_result
+ 	</select>
+ 	
+ </mapper>

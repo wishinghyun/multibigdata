@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1585029195023.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3326720936",
+    "id" : "75AA5121",
+    "lastKnownWriteTime" : 1584923761,
+    "last_content_update" : 1584923761,
+    "path" : "C:/iot/work/RWork/bigdata/basic_crawring.R",
+    "project_path" : "basic_crawring.R",
+    "properties" : {
+        "cursorPosition" : "40,5",
+        "scrollLine" : "34",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584681931677.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2413122819",
+    "id" : "B0C2745D",
+    "lastKnownWriteTime" : 1584691833,
+    "last_content_update" : 1584693427674,
+    "path" : "C:/iot/work/advanced/data_info.R",
+    "project_path" : "data_info.R",
+    "properties" : {
+        "cursorPosition" : "34,6",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
