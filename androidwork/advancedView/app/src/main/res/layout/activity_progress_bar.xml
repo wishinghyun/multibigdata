@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProgressBarActivity">
+    <ProgressBar
+        android:id="@+id/progress1"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/progress2"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/progress3"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="30" />
+    <Button
+        android:id="@+id/progressBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5증가시키기"
+        />
+    <Button
+        android:id="@+id/progressBtn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5감소시키기"
+        />
+    <Button
+        android:id="@+id/progressBtn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="값설정하기"
+        />
+</LinearLayout>

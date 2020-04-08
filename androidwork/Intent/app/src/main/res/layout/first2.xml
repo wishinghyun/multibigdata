@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="첫 번째 액티비티"/>
+
+	<Button
+	android:text="기본 액티비티 호출"
+		android:id="@+id/call1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<Button
+		android:text="result Value 액티비티 호출"
+		android:id="@+id/call2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+	<Button
+		android:text="종료"
+		android:id="@+id/btnExit"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+</LinearLayout>

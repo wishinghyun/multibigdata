@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">advancedView</string>
+    <string name="welcome">환영합니다</string>
+    <string name="getdata">입력문자가져오기</string>
+    <string name="setdata">문자열 셋팅하기</string>
+    <string name="menu1">로그인</string>
+    <string name="menu2">회원가입</string>
+    <string name="menu3">상세정보</string>
 </resources>

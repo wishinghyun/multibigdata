@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TextTestActivity">
+
+    <TextView
+        android:id="@+id/myinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <EditText
+        android:id="@+id/mytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="문자열을 입력하세요"
+        android:inputType="number"
+        />
+    <Button
+        android:id="@+id/btnget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/getdata"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+    <Button
+        android:id="@+id/btnset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setdata"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/exam_result_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="info"/>
+    <Button
+        android:id="@+id/exam_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="종료"/>
+    <CheckBox
+        android:id="@+id/member_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="우수회원"
+        />
+</LinearLayout>

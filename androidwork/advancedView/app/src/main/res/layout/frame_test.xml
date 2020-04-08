@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FrameTestActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FF9800">
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그인"
+            android:onClick="myclick"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:onClick="myclick"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/moreinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상세정보"
+            android:onClick="myclick"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearlogin"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#009688">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="로그인"
+                android:textSize="40dp"/>
+            <EditText
+                android:id="@+id/loginid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id"
+                />
+            <EditText
+                android:id="@+id/loginpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="button"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearsignin"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#4CAF50">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:textSize="40dp"/>
+            <EditText
+                android:id="@+id/signinname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                />
+            <EditText
+                android:id="@+id/signinid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="id"
+                />
+            <EditText
+                android:id="@+id/signinpass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                />
+            <Button
+                android:id="@+id/btnsignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="button"/>
+            <TextView
+                android:id="@+id/signinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearmoreinfo"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#8BC34A">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="회원정보"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img01"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="봉골레파스타"/>
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

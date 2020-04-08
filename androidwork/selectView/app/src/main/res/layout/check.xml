@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckActivity">
+
+    <TextView
+        android:id="@+id/checkTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/check1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크박스1"
+        android:tag="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <CheckBox
+        android:id="@+id/check2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크박스2"
+        android:tag="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <CheckBox
+        android:id="@+id/check3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크박스3"
+        android:tag="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <Button
+        android:id="@+id/btnCheck1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크상태설정"/>
+    <Button
+        android:id="@+id/btnCheck2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크상태확인"/>
+    <Button
+        android:id="@+id/btnCheck3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크상태해제"/>
+    <Button
+        android:id="@+id/btnCheck4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크상태변경"/>
+</LinearLayout>
