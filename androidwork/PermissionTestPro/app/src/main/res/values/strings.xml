@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PermissionTestPro</string>
+    <string name="per_msg">이 퍼미션은 자바를 알아야 할 수 있는 퍼미션입니다</string>
+</resources>
