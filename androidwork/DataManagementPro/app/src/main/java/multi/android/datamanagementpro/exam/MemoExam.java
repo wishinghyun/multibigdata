@@ -117,6 +117,11 @@ public class MemoExam extends AppCompatActivity {
                 sb.append(line+"\n");
             }
             view.setText(sb);
+            /*String line = br.readLine();
+            while (line!=null){
+                view.append(line+"\n");
+                line = br.readLine();
+            }*/
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();

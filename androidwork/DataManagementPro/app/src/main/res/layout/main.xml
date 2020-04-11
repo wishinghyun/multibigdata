@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="10dp"
+		android:text="자료입력하기"
+		android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_margin="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="상품명:"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+		<EditText
+			android:id="@+id/edtName"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="#0E549D"
+			android:padding="10dp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large"
+			android:textColor="#FFFFFF" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_margin="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="가    격:"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+		<EditText
+			android:id="@+id/edtPrice"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="#0E549D"
+			android:padding="10dp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large"
+			android:textColor="#FFFFFF" />
+
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_margin="10dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="10dp"
+			android:text="수    량:"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+		<EditText
+			android:id="@+id/edtSu"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="#0E549D"
+			android:padding="10dp"
+			android:textAppearance="@style/TextAppearance.AppCompat.Large"
+			android:textColor="#FFFFFF" />
+
+	</LinearLayout>
+
+<LinearLayout android:orientation = "horizontal"
+			  android:layout_width="match_parent"
+			  android:layout_height="wrap_content">	
+	<Button android:text="추가"			 
+			android:id="@+id/btnIns"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+	</Button>
+	
+	<Button android:text="결과보기" 
+			android:id="@+id/btnResult"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+	</Button>
+	<Button android:text="결과보기2" 
+			android:id="@+id/btnResult2"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+	</Button>
+	<Button android:text="검색" 
+			android:id="@+id/btnSearch"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+	</Button>
+</LinearLayout>
+
+
+	<!--<ImageView android:background = "#0000ff"
+			   android:layout_marginBottom = "10px" 
+			   android:layout_width="fill_parent"
+			   android:layout_height="2px">
+	</ImageView>-->
+
+	<ListView android:id="@+id/list"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			>
+	</ListView>	
+	
+</LinearLayout>
