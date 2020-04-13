@@ -43,9 +43,8 @@ public class DBHandler{
     }
 
     public Cursor search(String str){
-        String string = "%"+str+"%";
         Cursor cursor = db.query("product",null,"name like ?",
-                new String[]{string},null,null,null);
+                new String[]{"%"+str+"%"},null,null,null);
         return cursor;
     }
 

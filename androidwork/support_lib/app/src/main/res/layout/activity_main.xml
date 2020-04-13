@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <Button
+        android:id="@+id/btnAddFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프레그먼트추가하기"/>
+    <Button
+        android:id="@+id/btnRemoveFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프레그먼트제거하기"/>
+    <Button
+        android:id="@+id/btnSecondFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="두번째프레그먼트"/>
+
+
+
+    <fragment
+        android:id="@+id/fragment01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:name="multi.android.support_lib.fragment.FirstFragment"/>
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#D06AE1"
+        />
+</LinearLayout>
