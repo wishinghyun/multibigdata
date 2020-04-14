@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.Context;
 import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -19,13 +20,17 @@ public class examFragment extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_view_pager_main);
+        setContentView(R.layout.linear02);
     }
-    public void btn_click(View view){
+    public void btn_click(View v){
+        setFragment(v.getTag().toString());
+    }
+    public void setFragment(String idx){
+        Log.d("fragment",idx);
         FragmentManager fragmentManager = getSupportFragmentManager();
+        //프레그먼트의 변화를 관리하는 객체
         FragmentTransaction transaction = fragmentManager.beginTransaction();
-
-        switch (view.getTag().toString()){
+        switch (idx){
             case "0":
                 transaction.replace(R.id.container,view1Fragment);
                 break;
