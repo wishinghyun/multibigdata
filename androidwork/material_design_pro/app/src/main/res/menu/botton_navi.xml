@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/botton_item1"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="정보"
+        app:showAsAction="always"
+        android:enabled="true" />
+    <item
+        android:id="@+id/botton_item2"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="이메일"
+        app:showAsAction="always"
+        android:enabled="true" />
+    <item
+        android:id="@+id/botton_item3"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="로그인"
+        app:showAsAction="always"
+        android:enabled="true" />
+</menu>

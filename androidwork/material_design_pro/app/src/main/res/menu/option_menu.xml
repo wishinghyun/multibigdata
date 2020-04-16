@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/option_1"
+        android:title="즐겨찾기" />
+    <item
+        android:id="@+id/option_2"
+        android:title="공유">
+        <menu>
+            <item android:title="김샘에게 공유" />
+            <item android:title="카카오톡으로 공유" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/option_3"
+        android:title="설정" />
+</menu>
