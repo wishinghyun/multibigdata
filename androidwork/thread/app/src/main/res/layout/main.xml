@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center" >
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Bar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50px" />
+
+    <Button
+		android:id="@+id/btnNoThread"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Thread 사용안함"
+        android:onClick="btnNoThread"
+        />
+	<Button
+		android:id="@+id/btnThread01"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="잘못된 Thread 사용 예\nWorker Thread에서 UI조작함" />
+	
+	<Button
+		android:id="@+id/btnThread02"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Thread \n Handler객체 사용" />
+	<Button
+		android:id="@+id/btnThread03"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Thread \n Handler객체 사용2" />
+	<Button
+		android:id="@+id/showdata"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="데이터보기" />
+</LinearLayout>
