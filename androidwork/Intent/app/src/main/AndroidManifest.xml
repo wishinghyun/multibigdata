@@ -12,11 +12,10 @@
         <activity android:name=".UseOtherApp"></activity>
         <activity android:name=".ExamFirstActivity" />
         <activity android:name=".ExamSecondActivity" />
-        <activity android:name=".ReturnDataFirstActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".ReturnDataSecondActivity" />
         <activity android:name=".SecondActivity" />
-        <activity android:name=".BasicAppRun">
+        <activity android:name=".ReturnDataFirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
