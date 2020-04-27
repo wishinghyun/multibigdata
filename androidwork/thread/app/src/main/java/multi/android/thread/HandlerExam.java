@@ -20,7 +20,7 @@ public class HandlerExam extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_handler_exam);
 
-        textView = findViewById(R.id.txtView);
+        textView = findViewById(R.id.numView);
 
         button = findViewById(R.id.btnNumPrint);
         button.setOnClickListener(new View.OnClickListener() {

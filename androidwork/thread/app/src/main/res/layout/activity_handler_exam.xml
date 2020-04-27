@@ -7,16 +7,19 @@
     android:orientation="vertical"
     tools:context=".HandlerExam">
     <TextView
-        android:id="@+id/txtView"
+        android:id="@+id/numView"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_margin="30dp"
         android:background="@color/colorAccent"
+        android:textSize="250sp"
+        android:gravity="center_horizontal"
         />
     <Button
         android:id="@+id/btnNumPrint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="숫자 출력하기"
+        android:onClick="btn_click"
         />
 </LinearLayout>
