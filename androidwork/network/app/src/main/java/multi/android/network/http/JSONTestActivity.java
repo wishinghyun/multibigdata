@@ -64,31 +64,31 @@ public class JSONTestActivity extends AppCompatActivity {
         protected String doInBackground(Void... voids) {
             URL url = null;
             BufferedReader in=null;
-            String data=""; //background작업이 모두 완료되면 onPostExecute를 호출하며 전달할 데이터
-                            //===> 웹서버에서 받아온 JSON데이터
+            //background작업이 모두 완료되면 onPostExecute를 호출하며 전달할데이터
+            //===> 웹서버에서 받아온 json데이터
+            String data="";
             //progressDialog.dismiss();
             try {
                 //android.os.NetworkOnMainThreadException이 발생한다.
                 //메인쓰레드는 정지시킬 수 없다.
                 //웹 상의 리소스를 가져오기 위해서 URL객체를 생성
-                String path = "http://70.12.115.57:8088/bigdataShop/product/show_json";
+                String path =
+                   "http://70.12.115.50:8088/bigdataShop/product/show_json";
                 url = new URL(path);
-                //웹서버에 연결
-                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-                //연결된 HttpUrlConnection에 정보 설정
+                HttpURLConnection connection =
+                                (HttpURLConnection) url.openConnection();
                 connection.setRequestMethod("GET");
-                connection.setRequestProperty("Content-Type","application/json");
-                //응답을 정상으로 받았을때 실행하겠다는 의미
-                if (connection.getResponseCode()==HttpURLConnection.HTTP_OK){
-                    //연결된 서버에서 응답메시지를 받은 경우 응답메시지를
-                    //BufferedReader로 읽어온다
-                    //JSON데이터가 모두 BufferedReader로 읽을 수 있도록 설정
+                connection.setRequestProperty("Content-Type"
+                                    ,"application/json");
+                if(connection.getResponseCode()==HttpURLConnection.HTTP_OK){
                     in = new BufferedReader(
-                            new InputStreamReader(connection.getInputStream(),"UTF-8")
-                    );
+                                 new InputStreamReader(
+                                     connection.getInputStream(),"UTF-8")
+                            );
                     data = in.readLine();
                     Log.d("myhttp",data);
                 }
+
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             } catch (IOException e) {
@@ -103,9 +103,10 @@ public class JSONTestActivity extends AppCompatActivity {
             super.onPostExecute(s);
            // progressDialog.dismiss();
 
-            //웹서버에서 가져온 데이터가 json형식이므로 파싱해서 JSONObject를 ProductDTO로 변환
+            //웹서버에서 가져온 데이터가 json형식이므로
+            //파싱해서 JSONObject를 ProductDTO로 변환
             //변환한 ProductDTO를 ArrayList에 저장
-            JSONArray ja = null; //서버에서 받아온 데이터
+            JSONArray ja = null;
             try {
                 ja = new JSONArray(s);
                 for(int i=0;i<ja.length();i++){
@@ -164,9 +165,8 @@ public class JSONTestActivity extends AppCompatActivity {
             prd_nm.setText(alist.get(position).getPrd_nm());
 
             String img = alist.get(position).getImg_gen_file_nm();
-            img = "http://70.12.115.57:8088/bigdataShop/images/product/"+img;
+            img = "http://70.12.115.50:8088/bigdataShop/images/product/"+img;
             final String finalImg = img;
-            //Thread가 사진 다운로드 받는 작업
             Thread t = new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -175,7 +175,6 @@ public class JSONTestActivity extends AppCompatActivity {
                     try{
                         url = new URL(finalImg);
                         is = url.openStream();
-                        //BitmapFactory.decodeStream하면 알아서 가져옴?
                         final Bitmap bm = BitmapFactory.decodeStream(is);
                         runOnUiThread(new Runnable() {
                             @Override

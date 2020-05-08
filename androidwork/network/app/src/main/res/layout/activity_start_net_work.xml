@@ -2,19 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_tcp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".chatting.StartNetWork">
 
     <Button
-        android:id="@+id/clientInfo"
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="서버접속"
-        android:onClick="btn_connect"/>
-    <TextView
-        android:id="@+id/textInfo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:onClick="btn_tcpChat"
+        android:text="TCP채팅" />
 </LinearLayout>
