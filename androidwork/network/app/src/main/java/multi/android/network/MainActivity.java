@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             OutputStream os = null;
             DataOutputStream dos = null;
             try {
-                socket = new Socket("70.12.116.53", 12345);
+                socket = new Socket("192.168.35.85", 12345);
                 System.out.println("서버접속완료..."+socket);
 
                 is = socket.getInputStream();

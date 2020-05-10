@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -90,6 +91,14 @@ public class ChatClientActivity extends AppCompatActivity {
     }
     public void sendMessage(final String message) {
       //메시지를 서버에 전송할 수 있도록 작성하세요
+        Thread sm = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                pw.println(message);
+                pw.flush();
+            }
+        });
+        sm.start();
     }
 
 	//nickname을 다이얼로그를 통해서 입력받도록 구현한 리스너
@@ -109,6 +118,46 @@ public class ChatClientActivity extends AppCompatActivity {
         @Override
         protected String doInBackground(Integer... integers) {
            //서버와 접속하여 서버가 보내오는 메시지를 읽을 수 있도록 작성하세요
+            try {
+                socket = new Socket("192.168.35.85", 12345);
+                Log.d("chat","서버접속완료"+socket);
+                if (socket!=null) {
+                    ioWork();
+                }
+                sendMsg(nickname);
+                userlist.add(nickname);
+                Thread receiveThread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        while(true) {
+                            String msg;
+                            try {
+                                msg = br.readLine();
+                                Log.d("chat","서버가 전달한 메시지>>"+msg);
+                                filteringMsg(msg);
+                            } catch (IOException e) {
+                                //e.printStackTrace(); 개발할때만 씀
+                                try {
+                                    //서버쪽에서 연결이 끊어지는 경우 사용자는 자원을 반납한다
+                                    is.close();
+                                    isr.close();
+                                    br.close();
+                                    os.close();
+                                    pw.close();
+                                    socket.close();
+                                    Toast.makeText(getApplicationContext(),"서버와 접속이 끊어짐",Toast.LENGTH_SHORT).show();
+                                } catch (IOException e1) {
+                                    e1.printStackTrace();
+                                }
+                                break; //반복문 빠져나가도록 설정
+                            }
+                        }
+                    }
+                });
+                receiveThread.start();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             return "";
         }
         public void ioWork(){
@@ -134,19 +183,24 @@ public class ChatClientActivity extends AppCompatActivity {
             token = new StringTokenizer(msg,"/");
             String protocol = token.nextToken();
             String message = token.nextToken();
-            System.out.println("프로토콜:"+protocol+",메시지:"+message);
+            /*System.out.println("프로토콜:"+protocol+",메시지:"+message);*/
+            Log.d("chat","프로토콜:"+protocol+",메시지:"+message);
             if(protocol.equals("new")){
                 userlist.add(message);
 				//내용을 추가하세요.
+                publishProgress("new","msg","*"+message+"*님이 입장하셨습니다\n");
             }else if(protocol.equals("old")){
                 userlist.add(message);
 				 //내용을 추가하세요.
+                publishProgress("old","msg",message);
             }else if(protocol.equals("chatting")){
                 String nickname = token.nextToken();
                //내용을 추가하세요.
+                publishProgress("chatting",nickname,message);
             }else if(protocol.equals("out")){
                 userlist.remove(message);
               //내용을 추가하세요.
+                publishProgress("out","*"+nickname+"님이 퇴장하셨습니다");
             }
 
         }
@@ -155,8 +209,21 @@ public class ChatClientActivity extends AppCompatActivity {
         protected void onProgressUpdate(String... values) {
            //코드를 추가하세요
             //여기서 뷰 바꾸는 작업
+            super.onProgressUpdate(values);
+            String separate = values[0];
+            if (separate.equals("new")){
+                useradapter.notifyDataSetChanged();
+            }else if (separate.equals("old")){
+                useradapter.notifyDataSetChanged();
+            }else if (separate.equals("chatting")){
+                msg.add(values[1]+" : "+values[2]);
+                msgadapter.notifyDataSetChanged();
+            }else if (separate.equals("out")){
+                useradapter.notifyDataSetChanged();
+            }
         }
     }
+
 
     @Override
     protected void onDestroy() {
