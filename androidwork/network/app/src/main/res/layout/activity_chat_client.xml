@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".tcp.ChatClientActivity">
+    tools:context=".tcp.ChatClientActivity2">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

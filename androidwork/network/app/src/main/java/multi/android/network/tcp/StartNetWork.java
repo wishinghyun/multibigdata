@@ -16,7 +16,7 @@ public class StartNetWork extends AppCompatActivity {
         setContentView(R.layout.activity_start_net_work);
     }
     public void btn_tcpChat(View view){
-        Intent intent = new Intent(this, ChatClientActivity.class);
+        Intent intent = new Intent(this, ChatClientActivity2.class);
         startActivity(intent);
     }
 }
