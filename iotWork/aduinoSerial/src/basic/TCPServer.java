@@ -1,0 +1,33 @@
+package basic;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class TCPServer extends Thread{
+	OutputStream out;
+	InputStream is;
+	ServerSocket serversocket;
+	public TCPServer(OutputStream out) {
+		super();
+		this.out=out;
+	}
+	public void run() {
+		int ledstate = 0;
+		try {
+			serversocket = new ServerSocket(5000);
+			Socket acceptsocket = serversocket.accept();
+			System.out.println("acceptsocket => "+acceptsocket.getInetAddress().getHostAddress());
+			is = acceptsocket.getInputStream();
+			while(is!=null) {
+				ledstate = is.read();
+				out.write(ledstate);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+}

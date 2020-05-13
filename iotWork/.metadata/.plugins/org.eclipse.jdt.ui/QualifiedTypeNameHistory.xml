@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="basic.SerialConnectionTest"/>
+<fullyQualifiedTypeName name="gnu.io.CommPortIdentifier"/>
+<fullyQualifiedTypeName name="gnu.io.CommPort"/>
+<fullyQualifiedTypeName name="gnu.io.SerialPort"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="basic.SerialAduinoLEDTest"/>
+<fullyQualifiedTypeName name="basic.SerialAduinoWriterThread"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.net.ServerSocket"/>
+<fullyQualifiedTypeName name="java.net.Socket"/>
+<fullyQualifiedTypeName name="basic.TCPServer"/>
+</qualifiedTypeNameHistroy>

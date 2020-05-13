@@ -1,0 +1,22 @@
+package basic;
+
+import gnu.io.CommPortIdentifier;
+import gnu.io.NoSuchPortException;
+
+public class SerialConnectionTest {
+	public SerialConnectionTest() {
+		
+	}
+	public void connect(String portName) {
+		try {
+			//port가 유효한지 확인
+			CommPortIdentifier commPortIdentifier = CommPortIdentifier.getPortIdentifier(portName);
+		} catch (NoSuchPortException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		new SerialConnectionTest().connect("COM5");
+	}
+}
