@@ -1,0 +1,13 @@
+package can.basic;
+
+public class CheckSumTest {
+
+	public static void main(String[] args) {
+		String data = "G11";
+		char[] data_arr = data.toCharArray();//char형식으로 배열에 1개씩 들어감
+		for (int i = 0; i < data_arr.length; i++) {
+			System.out.println(data_arr[i]);
+		}
+	}
+
+}

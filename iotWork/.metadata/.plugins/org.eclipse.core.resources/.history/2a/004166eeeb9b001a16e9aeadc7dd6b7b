@@ -1,0 +1,10 @@
+package can.basic;
+
+public class CheckSumTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

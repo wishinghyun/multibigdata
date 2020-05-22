@@ -8,10 +8,17 @@
 <fullyQualifiedTypeName name="basic.SerialAduinoLEDTest"/>
 <fullyQualifiedTypeName name="basic.SerialAduinoWriterThread"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="java.net.ServerSocket"/>
 <fullyQualifiedTypeName name="java.net.Socket"/>
 <fullyQualifiedTypeName name="basic.TCPServer"/>
+<fullyQualifiedTypeName name="basic.SerialArduinoWriterThread"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="gnu.io.SerialPortEventListener"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.awt.Event"/>
+<fullyQualifiedTypeName name="gnu.io.SerialPortEvent"/>
+<fullyQualifiedTypeName name="serial.read.SerialListener"/>
 </qualifiedTypeNameHistroy>

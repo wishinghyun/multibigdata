@@ -1,0 +1,10 @@
+package can.basic;
+
+public class CANConnect {
+	SerialConnect serialConnect;
+	public CANConnect(String portName) {
+		serialConnect = new SerialConnect();
+		serialConnect.connect(portName, this.getClass().getName());
+		//input,output
+	}
+}

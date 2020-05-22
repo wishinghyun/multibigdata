@@ -248,14 +248,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="visible-xs" href="#top">Back to the top</a>
 </p>
       <!-- Sign Up to our Newsletter -->
-    <div class="featured-footer featured-footer-newsletter" style="background-size:cover;background-image:url(https://eclipse.org/home/images/iotcomm_bkgbanner.png);border-bottom:1px solid #ccc;border-top:1px solid #ccc;background-position:initial;">
+    <div class="featured-footer featured-footer-newsletter" style="background-size:cover;background-image:url(https://eclipse.org/home/images/eclipse-ide-2020-03.jpg);border-bottom:1px solid #ccc;border-top:1px solid #ccc;background-position:bottom;">
       <div class="container">
         <div class="row">
           <div class="col-sm-24">
-            
-            <h2><strong>JakartaOne Livestream Cloud Native for Java</strong></h2>
-            <p>Build Enterprise Java on Kubernetes!</p>
-            <a class='btn btn-primary btn-lg' href='https://jakartaone.org/cn4j2020/'>Register today</a>
+            <h4 class='margin-top-10 margin-bottom-0 fw-200'>2020 IOT DEVELOPER SURVEY</h4>
+            <h2 style='margin-top:10px;'><strong>TAKE THE IOT INDUSTRY'S LEADING DEVELOPER SURVEY TODAY</strong></h2>
+            <p>May 11 - June 26, 2020</p>
+            <a class='btn btn-primary btn-lg' href='https://www.surveymonkey.com/r/Eclipsebanner'>Take the Survey</a>
           </div>
           
         </div>
